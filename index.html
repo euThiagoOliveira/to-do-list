@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="listTarefa.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+
+<body> 
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" href="#">Lista de Tarefas</a>
+  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="Usar" 
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Por que  usar ?</a>
+        <div class="dropdown-menu" aria-labelledby="Usar">
+          <a class="dropdown-item" href="#">
+            Não é nada bom esquecer 
+            do que se tem pra fazer!
+          </a>
+         
+        </div>
+      </li>
+  </div>
+</nav>
+  <style>
+    /* Uma pequena estilização no content  */
+    .content{
+      border: 1px #eef solid;
+      box-shadow: 1px 4px 5px 2px #eef;
+      float:none;
+      margin:0 auto;
+    }
+  </style>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-6 col-md-offset-6 content" >
+    
+        <h4 class="text-center pb-2 mt-1">Escreva a sua tarefa !</h4>
+     
+     <div class="input-group pb-2">
+       <input class="form-control texto-da-tarefa" type="text"
+        name="" placeholder="Escreva a tarefa" aria-label="Escreva a tarefa " aria-describedby="texto">
+       <div class="input-group-append">
+         <span class="input-group-text Adicionar-tarefa" 
+         id="texto" style="cursor: pointer;">Adicionar</span>
+       </div>
+     </div>
+     <div class="tarefa-adicionada pb-2">
+
+    </div>
+     </div>
+  </div>
+
+</div>
+  <script src="js/tasks.js"></script>
+</body>
+</html>
